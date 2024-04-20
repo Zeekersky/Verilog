@@ -1,0 +1,82 @@
+$date
+	Sat Apr 20 14:30:01 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module SRLatch_tb $end
+$var wire 1 ! Qbar $end
+$var wire 1 " Q $end
+$var reg 1 # CLK $end
+$var reg 1 $ En $end
+$var reg 1 % R $end
+$var reg 1 & RST $end
+$var reg 1 ' S $end
+$var integer 32 ( clk_pulse [31:0] $end
+$scope module SRLatch_inst $end
+$var wire 1 # CLK $end
+$var wire 1 % R $end
+$var wire 1 ' S $end
+$var wire 1 $ enable $end
+$var wire 1 & reset $end
+$var reg 1 " Q $end
+$var reg 1 ! Qbar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+0'
+0&
+0%
+1$
+1#
+x"
+x!
+$end
+#10
+0!
+0"
+b1 (
+0#
+1%
+1'
+#20
+1!
+b10 (
+1#
+0'
+#30
+0!
+1"
+b11 (
+0#
+0%
+1'
+#40
+b100 (
+1#
+0'
+#50
+b101 (
+0#
+0$
+#60
+1!
+0"
+b110 (
+1#
+1%
+1'
+1&
+1$
+#70
+b111 (
+0#

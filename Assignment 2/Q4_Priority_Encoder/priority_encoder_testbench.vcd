@@ -1,0 +1,64 @@
+$date
+	Wed Apr 10 20:48:31 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module priority_encoder_testbench $end
+$var wire 3 ! res [2:0] $end
+$var reg 8 " data [7:0] $end
+$scope module priority_encoder_inst $end
+$var wire 8 # data [7:0] $end
+$var reg 3 $ res [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 $
+b1 #
+b1 "
+b0 !
+$end
+#10
+b1 !
+b1 $
+b11 "
+b11 #
+#20
+b10 !
+b10 $
+b101 "
+b101 #
+#30
+b11 !
+b11 $
+b1101 "
+b1101 #
+#40
+b100 !
+b100 $
+b10100 "
+b10100 #
+#50
+b101 !
+b101 $
+b111010 "
+b111010 #
+#60
+b110 !
+b110 $
+b1100010 "
+b1100010 #
+#70
+b111 !
+b111 $
+b11111111 "
+b11111111 #
+#80

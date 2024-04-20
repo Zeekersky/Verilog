@@ -1,0 +1,74 @@
+$date
+	Thu Mar 14 14:41:33 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Encoder4to2_tb $end
+$var wire 2 ! enc_output [1:0] $end
+$var wire 4 " dec_output [3:0] $end
+$var reg 2 # dec_input [1:0] $end
+$var reg 4 $ enc_input [3:0] $end
+$scope module dec $end
+$var wire 2 % a [1:0] $end
+$var wire 4 & b [3:0] $end
+$upscope $end
+$scope module enc $end
+$var wire 4 ' a [3:0] $end
+$var wire 2 ( b [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 (
+b1 '
+bx &
+bx %
+b1 $
+bx #
+bx "
+b0 !
+$end
+#10
+b1 !
+b1 (
+b10 $
+b10 '
+#20
+b10 !
+b10 (
+b100 $
+b100 '
+#30
+b11 !
+b11 (
+b1000 $
+b1000 '
+#40
+b1 "
+b1 &
+b0 #
+b0 %
+#50
+b10 "
+b10 &
+b1 #
+b1 %
+#60
+b100 "
+b100 &
+b10 #
+b10 %
+#70
+b1000 "
+b1000 &
+b11 #
+b11 %
+#80

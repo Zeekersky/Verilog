@@ -1,0 +1,69 @@
+$date
+	Wed Apr 10 20:53:23 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module CLA_TestBench $end
+$var wire 4 ! SUM [3:0] $end
+$var wire 1 " CarryOUT $end
+$var reg 1 # CarryIN $end
+$var reg 4 $ input_A [3:0] $end
+$var reg 4 % input_B [3:0] $end
+$scope module uut $end
+$var wire 1 # CarryIN $end
+$var wire 1 " CarryOUT $end
+$var wire 1 & carry1 $end
+$var wire 1 ' carry2 $end
+$var wire 1 ( carry3 $end
+$var wire 4 ) inp_a [3:0] $end
+$var wire 4 * inp_b [3:0] $end
+$var wire 4 + SUM [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b101 +
+b11 *
+b10 )
+0(
+1'
+0&
+b11 %
+b10 $
+0#
+0"
+b101 !
+$end
+#10
+1"
+b10 !
+b10 +
+0'
+1(
+b1100 %
+b1100 *
+b110 $
+b110 )
+#20
+b110 !
+b110 +
+1'
+1&
+b1111 %
+b1111 *
+b111 $
+b111 )
+#30
+b1010 !
+b1010 +
+b1011 $
+b1011 )
+#40

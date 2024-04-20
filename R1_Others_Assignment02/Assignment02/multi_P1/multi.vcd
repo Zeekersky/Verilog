@@ -1,0 +1,44 @@
+$date
+	Wed Feb 28 22:12:05 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multi_tb $end
+$var wire 8 ! out [7:0] $end
+$var reg 4 " A [3:0] $end
+$scope module ans $end
+$var wire 4 # A [3:0] $end
+$var wire 8 $ out [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b100 $
+b10 #
+b10 "
+b100 !
+$end
+#5
+b110 !
+b110 $
+b11 "
+b11 #
+#10
+b1110 !
+b1110 $
+b111 "
+b111 #
+#15
+b1100 !
+b1100 $
+b110 "
+b110 #
+#20

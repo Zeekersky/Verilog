@@ -1,0 +1,34 @@
+$date
+	Thu Feb 29 10:47:49 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module MultBy2_tb $end
+$var wire 5 ! b [4:0] $end
+$var reg 4 " a [3:0] $end
+$scope module mult2 $end
+$var wire 4 # a [3:0] $end
+$var wire 5 $ b [4:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b1110 $
+b111 #
+b111 "
+b1110 !
+$end
+#10
+b10000 !
+b10000 $
+b1000 "
+b1000 #
+#20

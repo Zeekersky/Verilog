@@ -1,0 +1,104 @@
+$date
+	Sat Apr 20 14:30:10 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module DLatch_tb $end
+$var wire 1 ! Q $end
+$var wire 1 " N2 $end
+$var wire 1 # N1 $end
+$var reg 1 $ CLK $end
+$var reg 1 % D $end
+$var reg 1 & RST $end
+$var integer 32 ' clk_pulse [31:0] $end
+$scope module DLatch_inst $end
+$var wire 1 $ CLK $end
+$var wire 1 % D $end
+$var wire 1 & RST $end
+$var reg 1 # N1 $end
+$var reg 1 " N2 $end
+$var reg 1 ! Q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+1&
+x%
+0$
+x#
+x"
+0!
+$end
+#1
+0#
+#4
+b1 '
+1$
+0%
+0&
+#6
+0"
+#8
+b10 '
+0$
+1%
+#12
+b11 '
+1$
+#13
+1#
+#14
+1!
+#16
+b100 '
+0$
+0%
+#17
+0#
+#18
+1"
+0!
+#19
+1!
+#20
+b101 '
+1$
+1%
+#21
+1#
+#22
+0"
+#24
+b110 '
+0$
+#25
+0#
+#26
+1"
+0!
+#27
+1!
+#28
+b111 '
+1$
+0%
+#30
+0"
+#31
+0!
+#32
+b1000 '
+0$
+1%
+#36
+b1001 '
+1$
