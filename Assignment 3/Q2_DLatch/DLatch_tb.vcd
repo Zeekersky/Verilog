@@ -1,5 +1,5 @@
 $date
-	Sat Apr 20 14:30:10 2024
+	Sat Apr 20 22:44:14 2024
 $end
 $version
 	Icarus Verilog
@@ -19,6 +19,7 @@ $scope module DLatch_inst $end
 $var wire 1 $ CLK $end
 $var wire 1 % D $end
 $var wire 1 & RST $end
+$var reg 1 ( CLK_n $end
 $var reg 1 # N1 $end
 $var reg 1 " N2 $end
 $var reg 1 ! Q $end
@@ -30,6 +31,7 @@ $dumpall
 $end
 #0
 $dumpvars
+x(
 b0 '
 1&
 x%
@@ -45,17 +47,22 @@ b1 '
 1$
 0%
 0&
+#5
+0(
 #6
 0"
 #8
 b10 '
 0$
 1%
+#9
+1(
 #12
 b11 '
 1$
 #13
 1#
+0(
 #14
 1!
 #16
@@ -63,42 +70,55 @@ b100 '
 0$
 0%
 #17
+1(
 0#
 #18
 1"
 0!
 #19
 1!
+0"
 #20
+1"
+0!
 b101 '
 1$
 1%
 #21
-1#
-#22
+1!
 0"
+1#
+0(
 #24
 b110 '
 0$
 #25
+1(
 0#
 #26
 1"
 0!
 #27
 1!
+0"
 #28
+1"
+0!
 b111 '
 1$
 0%
-#30
+#29
+1!
 0"
-#31
+0(
+#30
 0!
 #32
 b1000 '
 0$
 1%
+#33
+1(
 #36
 b1001 '
 1$

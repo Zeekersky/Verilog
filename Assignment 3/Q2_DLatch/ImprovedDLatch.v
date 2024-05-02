@@ -1,15 +1,42 @@
+// module DLatch(input CLK, RST, D, output reg N1, N2, Q);
+//     always @(CLK) begin
+//         if (RST)
+//             Q <= 0;
+//         N1 <= #1 (D & CLK);
+//         N2 <= #2 (Q & (~CLK));
+//     end
+//     always @(N1, N2) begin
+//         if (RST)
+//             Q = 0;
+//         else
+//             Q = #1 (N1 | N2);
+//     end
+// endmodule
+
 module DLatch(input CLK, RST, D, output reg N1, N2, Q);
+    reg CLK_n;
     always @(CLK) begin
         if (RST)
             Q <= 0;
         N1 <= #1 (D & CLK);
-        N2 <= #2 (Q & (~CLK));
+    end
+    always @(CLK) begin
+        if (RST)
+            Q <= 0;
+        else
+            CLK_n <= #1 ~CLK;
+    end
+    always @(Q, CLK_n) begin
+        if (RST)
+            Q <= 0;
+        else
+            N2 <= #1 (Q & CLK_n);
     end
     always @(N1, N2) begin
         if (RST)
-            Q = 0;
+            Q <= 0;
         else
-            Q = #1 (N1 | N2);
+            Q <= #1 (N1 | N2);
     end
 endmodule
 

@@ -41,10 +41,11 @@ module BiDir_ShiftRegister#(parameter N = 4)(input CLK, RST, dir, input_data, ou
 endmodule
 
 module BiDir_ShiftRegister_tb;
+    parameter n = 3;
     reg CLK, RST, dir, input_data;
-    wire [2:0] output_data;
+    wire [n-1:0] output_data;
     integer clk_pulse; // For generating the clockpulse
-    BiDir_ShiftRegister #(3) BiDir_ShiftRegister_inst (CLK, RST, dir, input_data, output_data);
+    BiDir_ShiftRegister #(n) BiDir_ShiftRegister_inst (CLK, RST, dir, input_data, output_data);
     initial begin
         $dumpfile("BiDir_ShiftRegister_tb.vcd");
         $dumpvars(0, BiDir_ShiftRegister_tb);
