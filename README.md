@@ -54,4 +54,4 @@ This set of 4 assignments is designed to take learners from beginner to expert i
 - **4th cycle**: PA = 0 (N(P_A) = 2), PB = 1 (N(P_B) = 2)  
   → 2N(P_A) + N(P_B) = 6 (mod 4) → O = 0  
 
-Implement the Verilog code for this system based on the above description.  
+The Verilog codes are implemented in this repo based on the above description. 
